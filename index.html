@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+    <style>
+        /***************************************** Search bar ****************************************/
+        .google-logo {
+            text-align: center;
+            position: relative;
+            top: 150px;
+        }
+
+        .search-bar {
+            font-family: 'Roboto', sans-serif;
+            text-align: center;
+            position: relative;
+            top: 160px;
+        }
+        
+        .textarea {
+            width: 575px;
+            height: 36px;
+            border-radius: 25px;
+            border-color: lightgray;
+            resize: none;
+            vertical-align: middle;
+            text-align: left;
+            font-family: 'Roboto', sans-serif;
+            white-space: nowrap;
+            overflow: hidden;
+            outline: none;
+            align-content: center;
+        }
+
+        .textarea:hover {
+            box-shadow: 0 0 11px rgb(33, 33, 33, 0.2);
+        }
+
+        .icon-search {
+            font-family: 'Material Icons';
+            font-weight: normal;
+            font-style: normal;
+            font-size: 20px;
+            display: inline-block;
+            line-height: 1;
+            text-transform: none;
+            letter-spacing: normal;
+            word-wrap: normal;
+            white-space: nowrap;
+            direction: ltr;
+            padding: 15px 14px;
+            color: #707070;
+
+            position: relative;;
+            top: 7px;
+            left: 55px;
+        }
+
+        .icon-key-voice {
+            font-family: 'Material Icons';
+            font-weight: normal;
+            font-style: normal;
+            font-size: 20px;
+            display: inline-block;
+            line-height: 1;
+            text-transform: none;
+            letter-spacing: normal;
+            word-wrap: normal;
+            white-space: nowrap;
+            direction: ltr;
+            padding: 15px 14px;
+            color: #707070;
+
+            position: relative;;
+            top: 7px;
+            left: -53px;
+        }
+
+        .buttons {
+            font-family: 'Roboto', sans-serif;
+            text-align: center;
+            position: relative;
+            top: 190px;
+        }
+
+        .button-text {
+            background-color: #f4f2f5;
+            color: #707070;
+            border-color: #f4f2f5;
+            border: 0px;
+            height: 45px;
+            padding: 10px;
+            border-radius: 5px;
+            margin: 0px 5px;
+        }
+
+        .language {
+            font-family: 'Roboto', sans-serif;
+            font-size: 12px;
+            text-align: center;
+            position: relative;
+            top: 225px;
+        }
+
+        /******************************************* Navigation Bar *******************************************/
+
+        .navbar {
+            font-family: 'Roboto', sans-serif;
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: white;
+            position: fixed;
+            top: 12px;
+            width: 100%;
+            font-size: 13px;
+        }
+
+        .navbar-side {
+            float: right;
+        }
+        
+        .navbar-side .navbar-style {
+            display: block;
+            color: #707070;
+            text-align: center;
+            padding: 21px 10px;
+            text-decoration: none;
+        }
+
+        .navbar-side .navbar-button {
+            display: block;
+            color: white;
+            background-color: #4285F4;
+            border-radius: 3px;
+            border-color: transparent;
+            text-align: center;
+            padding: 7px 13px;
+            text-decoration: none;
+            margin-right: 40px;
+            margin-top: 10px;
+            font-size: 13px;
+        }
+
+        .material-icons {
+            font-family: 'Material Icons';
+            font-weight: normal;
+            font-style: normal;
+            font-size: 20px;
+            display: inline-block;
+            line-height: 1;
+            text-transform: none;
+            letter-spacing: normal;
+            word-wrap: normal;
+            white-space: nowrap;
+            direction: ltr;
+            padding: 15px 14px;
+            color: #707070;
+        }
+
+        /******************************************** Bottom Footer *******************************************/
+
+        .footer{
+            font-family: 'Roboto', sans-serif;
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #f4f2f5;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .footer-side{
+            float: left;
+        }
+
+        .footer-side .footer-style{
+            display: block;
+            color: #707070;
+            text-align: center;
+            padding: 12px 15px;
+            text-decoration: none;
+            font-size: 14px;
+        }
+    </style>
+    
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    </head>
+    
+    <body>
+        <div class="navbar">
+            <li class="navbar-side"><button class="navbar-button"><b>Sign In</b></button></li>
+            <li class="navbar-side"><span class="material-icons">apps</span></li>
+            <li class="navbar-side"><a class="navbar-style">Images</a></li>
+            <li class="navbar-side"><a class="navbar-style">Gmail</a></li>
+        </div>
+    
+
+        <div class="google-logo">
+            <img src = https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png alt="Google Logo">
+        </div>
+
+        <div class="search-bar">
+            <div class="text-container">
+                <span class="icon-search">search</span>
+                <textarea class="textarea" rows="1"></textarea>
+                <span class="icon-key-voice">keyboard_voice</span>
+            </div>
+        </div>
+
+        <div class="buttons"> 
+            <button class="button-text">Google Search</button>
+            <button class="button-text">I'm Feeling Lucky</button>
+        </div>
+
+        <div class="language">
+            Google offered in: <a href="https://en.wikipedia.org/wiki/France">French</a>
+        </div>
+        
+        <div class="footer">
+            <li class="footer-side"><a class="footer-style">Advertising</a></li>
+            <li class="footer-side"><a class="footer-style">Business</a></li>
+            <li class="footer-side"><a class="footer-style">About</a></li>
+            <li class="footer-side"><a class="footer-style">How Search works</a></li>
+            <li class="footer-side" style="float:right"><a class="footer-style">Settings</a></li>
+            <li class="footer-side" style="float:right"><a class="footer-style">Terms </a></li>
+            <li class="footer-side" style="float:right"><a class="footer-style">Privacy</a></li>
+            <li class="footer-side" style="float:right"><a class="footer-style">Consumer Information</a></li>
+        </div>
+    </body>
+</html>
